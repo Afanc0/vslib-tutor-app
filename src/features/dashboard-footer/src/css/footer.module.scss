@@ -1,0 +1,102 @@
+@import '../../../../css/global.scss';
+
+/* Varibles */
+$footer-background-color: #3B2D5F;
+
+/* paddings */
+@include x-space-padding(48);
+@include x-space-padding(64);
+@include x-space-padding(96);
+
+@include y-space-padding(48);
+@include y-space-padding(72);
+
+@include padding-right(64);
+
+/* text size */
+@include text-size(18);
+
+/* gap */
+@include gap(6);
+@include gap(20);
+
+
+#footer-section {
+    background-color: $footer-background-color;
+}
+
+/* Module Classes */
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-1 {
+    flex: 2;
+}
+
+.justify-align-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-align-end {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.justify-align-start {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.letter-spacing-375 {
+    letter-spacing: 0.0375cm;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+/* size */
+
+.max-w-50 {
+    max-width: 500px;
+}
+
+.bottom-border-1 {
+    border-bottom: solid 1px white;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+
+.round-full {
+    border-radius: 100%;
+}
+
+.round-object {
+    width: 60px;
+    height: 60px;
+}
+
+.round-color {
+    background-color: #694F8E;
+}

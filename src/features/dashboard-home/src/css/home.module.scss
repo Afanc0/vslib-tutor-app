@@ -1,0 +1,119 @@
+@import '../../../../css/global.scss';
+
+/* Local x-axis padding */
+@include x-space-padding(8);
+@include x-space-padding(16);
+@include x-space-padding(24);
+@include x-space-padding(32);
+@include x-space-padding(64);
+
+/* Local y-axis padding */
+@include y-space-padding(8);
+@include y-space-padding(16);
+@include y-space-padding(24);
+@include y-space-padding(32); 
+
+/* Local text-size */
+@include text-size(14);
+@include text-size(18);
+@include text-size(20);
+@include text-size(24);
+@include text-size(28);
+@include text-size(32);
+@include text-size(48);
+
+/* Local gap */
+@include gap(8);
+@include gap(12);
+@include gap(16);
+@include gap(20);
+@include gap(32);
+
+.min-w-100 {
+    min-width: 100%;
+}
+
+.w-inherit {
+    min-width: inherit;
+    height: 100vh;
+}
+
+.w-75 {
+    width: 750px;
+}
+
+/* Flex design aspect */
+.display-flex-1 {
+    display: flex;
+    flex: 1;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-align-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-align-start {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.justify-align-end {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+/* Type */
+.bold-text {
+    font-weight: bold;
+}
+
+/* Base style */
+button {
+    display: inline-block;
+    margin-top: 16px;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    &:hover {
+        color: #4457ffa2;
+    }
+}
+
+/* Absoulte */
+.display-absolute {
+    position: absolute;
+}
+
+
+/* background */
+#background-content {
+    background-image: url('https://media1.tenor.com/m/xLXYm2_1uGcAAAAC/ellis-left4dead2.gif');
+    background-size: cover;
+}

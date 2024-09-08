@@ -1,0 +1,44 @@
+@mixin x-space-padding($x) {
+    .x-space-padding-#{$x} {
+        padding-left: #{$x}px;
+        padding-right: #{$x}px;
+    }
+}
+
+@mixin y-space-padding($x) {
+    .y-space-padding-#{$x} {
+        padding-top: #{$x}px;
+        padding-bottom: #{$x}px;
+    }
+}
+
+@mixin margin-top($x) {
+    .margin-top-#{$x} {
+        margin-top: #{$x}px;
+    }
+}
+
+@mixin padding-right($x) {
+    .padding-right-#{$x} {
+        margin-right: #{$x}px;
+    }
+}
+
+@mixin margin-y($x) {
+    .margin-y-#{$x} {
+        margin-top: #{$x}px;
+        margin-bottom: #{$x}px;
+    }
+}
+
+@mixin text-size($x) {
+    .text-size-#{$x} {
+        font-size: #{$x}px;
+    }
+}
+
+@mixin gap($x) {
+    .gap-#{$x} {
+        gap: #{$x}px;
+    }
+}

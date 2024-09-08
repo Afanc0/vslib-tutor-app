@@ -1,0 +1,104 @@
+
+@import '../../../../css/global.scss';
+
+/* paddings */
+@include x-space-padding(64);
+@include x-space-padding(48);
+@include x-space-padding(96);
+@include y-space-padding(124);
+
+/* text size */
+@include text-size(14);
+@include text-size(16);
+@include text-size(40);
+
+/* margin */
+@include margin-top(16);
+
+@include margin-y(16);
+
+/* gap */
+@include gap(8);
+
+// Define the variable
+$content-body-background-color: #694F8E;
+$content-body-background-color-2: #B692C2;
+$text-title-color: #FFDFD6;
+
+/* Main Section Design */
+.content-color-apply {
+    background-color: $content-body-background-color;
+}
+
+.content-color-apply-2 {
+    background-color: $content-body-background-color-2;
+}
+
+/* Module Classes */
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.justify-align-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-align-end {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.justify-align-start {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#text-color {
+    color: $text-title-color
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.line-height-1 {
+    line-height: 1.15cm;
+}
+
+.w-16 {
+    width: 500px;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+button:hover {
+    border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}

@@ -1,0 +1,11 @@
+{
+    "SITE_ABOUT": "Our website provides in-depth lessons on VSLib, offering users comprehensive guidance on its documentation. Through detailed tutorials, we break down the functionalities of VSLib's classes and functions, teaching users how to effectively use them to create scripts. Whether you're a beginner or experienced developer, our step-by-step lessons simplify the complexities of VSLib, making scripting more accessible and easier to master.",
+    "LINK_CONTENT_1": {
+        "title": "Find and Download VSLib on GitHub",
+        "description": "VSLib is a powerful VScript library for L4D2 modding, enabling advanced mutations, interactive maps, and more. Download and install the library to get started."
+    },
+    "LINK_CONTENT_2": {
+        "title": "Explore Squirrel Language Documentation",
+        "description": "Dive into Squirrel! Find comprehensive documentation, tutorials, and resources to get started with Squirrel."
+    }
+}
