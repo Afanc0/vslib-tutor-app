@@ -1,43 +1,40 @@
 import styles from "./css/home.module.scss";
 
-import Left4DeadLogoSvg from "./components/left-4-dead-logo/left4deadlogo";
 import HomeNavbar from "./components/home-navbar/Navbar";
+import content from "../../../content-text.json";
+import DownChevron from "./components/Down-Chevron";
+import { RefObject } from "react";
+import RefProps from "../../refProp.type";
 
+function DashboardHome(props: RefProps) {
 
-function DashboardHome() {
+    const [repo, squir, comp] = props.refArray
+
+    const scrollToSection = (sectionRef: RefObject<HTMLElement>) => {
+        if (sectionRef.current) {
+            sectionRef.current.scrollIntoView({ behavior: 'smooth' })
+        }
+    };
+
     return (
-        <section id={styles["background-content"]}>
+        <header id={styles["background-content"]}>
 
-            <HomeNavbar />
+            <HomeNavbar refArray={[repo, squir, comp]} />
 
-            <div className={`${styles["x-space-padding-32"]} ${styles["min-w-100"]}`}>
-
-                <div className={`${styles["w-inherit"]} ${styles["display-flex-1"]} ${styles["justify-align-center"]} ${styles["flex-col"]}`}>
-
-                    <div className={`${styles["justify-align-end"]} ${styles["flex"]}`}>
-
-                        <Left4DeadLogoSvg />
-
+            <div className={`${styles["x-space-padding-96"]}  ${styles["y-space-padding-100"]} ${styles["flex"]} ${styles["align-center"]} ${styles["justify-space-between"]}`}>
+                <div className={`${styles["flex"]} ${styles["flex-1"]}`}>
+                    <div className={`${styles["flex"]} ${styles["justify-center"]} ${styles["flex-col"]} ${styles["gap-16"]} ${styles["min-h-250"]} ${styles["w-16"]}`}>
+                        <span className={`${styles["text-size-48"]} ${styles["bold-text"]}`}>{content["Title"]["title"]}</span>
+                        <span className={styles["text-size-16"]}>{content["Title"]["description"]}</span>
                     </div>
-
-                    <div className={`${styles["justify-align-start"]} ${styles["flex"]} ${styles["flex-col"]}`}>
-                            
-                        <span className={`${styles["text-size-48"]} ${styles["bold-text"]}`}>VSLib Resource Space</span>
-
-                        <span className={styles["text-size-14"]}>Introductory Coverage of Scripting in L4D2</span>
-
-                        <button>
-
-                            <span>Let's Script</span>
-                            
-                        </button>
-
-                    </div>
-
                 </div>
-
             </div>
-        </section>
+            <div className={`${styles["flex"]} ${styles["justify-align-center"]} ${styles["y-space-padding-32"]}`}>
+                <div onClick={() => scrollToSection(repo)} className={`${styles["round-button"]} ${styles["flex"]} ${styles["justify-align-center"]}`}>
+                    <DownChevron />
+                </div>
+            </div>
+        </header>
     );
 }
 

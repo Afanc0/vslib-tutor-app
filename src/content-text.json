@@ -7,5 +7,9 @@
     "LINK_CONTENT_2": {
         "title": "Explore Squirrel Language Documentation",
         "description": "Dive into Squirrel! Find comprehensive documentation, tutorials, and resources to get started with Squirrel."
+    },
+    "Title": {
+        "title": "VScript Fundamentals with VSLib",
+        "description": "Explore VScript with Us! Dive into our easy-to-follow tutorials on VSLib, where we simplify scripting concepts for everyone. From beginners to pros, our step-by-step lessons make mastering VSLib a breeze. Get ready to unlock your scripting potential with our comprehensive guides!"
     }
 }

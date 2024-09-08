@@ -2,8 +2,19 @@ import style from "./css/footer.module.scss";
 import content from "../../../content-text.json";
 
 import GithubMinIcon from "./components/GithubMinIcon";
+import RefProps from "../../refProp.type";
+import { RefObject } from "react";
 
-function DashboardFooter() {
+function DashboardFooter(props: RefProps) {
+
+    const [repo, squir, comp] = props.refArray
+
+    const scrollToSection = (sectionRef: RefObject<HTMLElement>) => {
+        if (sectionRef.current) {
+            sectionRef.current.scrollIntoView({ behavior: 'smooth' })
+        }
+    };
+
     return (
         <footer id={style["footer-section"]}>
             <div className={`${style["x-space-padding-96"]} ${style["flex"]} ${style["y-space-padding-72"]}`}>
@@ -14,9 +25,9 @@ function DashboardFooter() {
                 <div className={`${style["flex"]} ${style["flex-1"]} ${style["flex-col"]} ${style["gap-20"]}`}>
                     <span className={`${style["text-size-18"]} ${style["bold"]} ${style["letter-spacing-375"]}`}>CATEGORIES</span>
                     <ul className={`${style["flex"]} ${style["flex-col"]} ${style["gap-6"]}`}>
-                        <li>Respository</li>
-                        <li>Squirrel Documentation</li>
-                        <li>Compendium</li>
+                        <li onClick={() => scrollToSection(repo)}>Respository</li>
+                        <li onClick={() => scrollToSection(squir)}>Squirrel Documentation</li>
+                        <li onClick={() => scrollToSection(comp)}>Compendium</li>
                     </ul>
                 </div>
                 <div className={`${style["flex"]} ${style["flex-1"]} ${style["flex-col"]} ${style["gap-20"]}`}>

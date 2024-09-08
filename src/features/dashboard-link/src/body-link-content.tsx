@@ -8,12 +8,15 @@ import content from "../../../content-text.json";
 
 import React from "react";
 
+import RefProps from "../../refProp.type";
 
-function BodyLinkContent() {
+function BodyLinkContent(props: RefProps) {
+
+    const [repo, squir] = props.refArray
 
     return (
         <React.Fragment>
-            <section className={`${style["content-color-apply"]} ${style["y-space-padding-124"]}`}>
+            <section ref={repo} className={`${style["content-color-apply"]} ${style["y-space-padding-124"]}`}>
                 <div className={`${style["flex"]} ${style["flex-row"]} ${style["x-space-padding-96"]}`}>
                     <div className={`${style["flex"]} ${style["flex-1"]} ${style["justify-align-end"]}`}>
                         <div className={`${style["flex"]} ${style["flex-col"]} ${style["w-16"]} ${style["x-space-padding-64"]}`}>
@@ -37,7 +40,7 @@ function BodyLinkContent() {
                     </div>
                 </div>
             </section>
-            <section className={`${style["content-color-apply-2"]} ${style["y-space-padding-124"]}`}>
+            <section ref={squir} className={`${style["content-color-apply-2"]} ${style["y-space-padding-124"]}`}>
             <div className={`${style["flex"]} ${style["flex-row"]} ${style["x-space-padding-96"]}`}>
                 <div className={`${style["flex-1"]} ${style["flex"]} ${style["justify-align-end"]}`}>
                     <SquirrelLogo className={`${style["x-space-padding-96"]}`} />

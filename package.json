@@ -1,9 +1,9 @@
 {
+  "homepage": "https://github.com/Afanc0/vslib-tutor-app",
   "name": "vslib-tutor-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Afanc0/vslib-tuor-app",
   "scripts": {
     "dev": "vite",
     "predeploy": "yarn build",
