@@ -1,6 +1,7 @@
 import DashboardHome from './features/dashboard-home';
 import BodyLinkContent from './features/dashboard-link';
 import DashboardFooter from './features/dashboard-footer';
+import DashboardContent from './features/dashboard-content';
 import React, { useRef } from 'react';
 
 function App() {
@@ -14,9 +15,7 @@ function App() {
       <DashboardHome refArray={[repo, squir, comp]} />
       <main>
         <BodyLinkContent refArray={[repo, squir, comp]} />
-        {/* <div style={{backgroundColor: "white", height: "100vh"}}>
-
-        </div> */}
+        <DashboardContent refVal={comp}/>
       </main>
       <DashboardFooter refArray={[repo, squir, comp]} />
     </React.Fragment>
