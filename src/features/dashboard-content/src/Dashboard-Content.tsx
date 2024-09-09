@@ -1,8 +1,22 @@
+import LessonCard from "./components/LessonCard";
+import style from "./css/dashboardcontent.module.scss"
 
+interface DashboardContentProps {
+    refVal?: React.RefObject<HTMLDivElement>;
+}
 
-function DashboardContent() {
+function DashboardContent(props: DashboardContentProps) {
+
+    const value = props.refVal
+
     return (
-        <p>1r1</p>
+        <section ref={value} id={style["dasboard-content-white"]} className={`${style["x-space-padding-96"]}`}>
+            <div className={`${style["flex-wrap"]} ${style["y-space-padding-72"]} ${style["flex"]} ${style["justify-center"]} ${style["gap-50"]}`}>
+                <LessonCard lessonId="1"/> 
+                <LessonCard lessonId="2"/>
+                <LessonCard lessonId="3"/> 
+            </div>
+        </section>
     )
 }
 
