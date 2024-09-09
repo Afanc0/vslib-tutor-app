@@ -1,0 +1,20 @@
+{
+    "1": {
+        "title": "Hello, World!",
+        "description": "In this introductory lesson, we'll explore how to use action functions to display a classic message: Hello, World!. This foundational step will help you understand how action functions work and how they can be used to interact with code dynamically.",
+        "difficulty": "beginner", 
+        "url": "https://ucarecdn.com/66fc354e-3c1d-471b-a8c6-d0ca18d8dd54/"
+    }, 
+    "2": {
+        "title": "Configuration",
+        "description": "In this introductory lesson, we’ll learn how to configure the vslib files within the Left 4 Dead 2 directory to enable scripting. Mastering this setup is crucial, as it forms the foundation for all future lessons.",
+        "difficulty": "beginner", 
+        "url": "https://steamuserimages-a.akamaihd.net/ugc/99476231551631153/E703E7814B9883FEEF433C7C3FB049DC7DB9ACBD/"
+    },
+    "3": {
+        "title": "Squirrel Syntax",
+        "description": "In this introductory lesson on Squirrel Syntax, we’ll cover the basics of the Squirrel programming language. You'll learn fundamental concepts and syntax that will serve as the foundation for scripting within the Left 4 Dead 2 environment. This knowledge is essential for effectively using Squirrel and will be the basis for all future lessons.",
+        "difficulty": "beginner", 
+        "url": "https://imgcdn.stablediffusionweb.com/2024/2/28/c1c4561c-5235-430a-bb71-d1f19e7425fb.jpg"
+    }
+}
