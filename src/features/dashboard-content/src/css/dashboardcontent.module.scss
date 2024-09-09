@@ -21,6 +21,9 @@
 
 $background-white-color: #ffffff;
 $module-text-color: #000000;
+$easy-lesson-card: #FABC3F;
+$med-lesson-card: #E85C0D;
+$hard-lesson-card: #821131;
 
 #dasboard-content-white {
     background-color: $background-white-color;
@@ -100,4 +103,16 @@ $module-text-color: #000000;
     line-height: 1.5;
     max-height: 6em;
     white-space: normal;
-  }
+}
+
+.easy-text {
+    color: $easy-lesson-card
+}
+
+.med-text {
+    color: $med-lesson-card
+}
+
+.hard-text {
+    color: $hard-lesson-card
+}

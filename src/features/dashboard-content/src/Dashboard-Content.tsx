@@ -14,7 +14,10 @@ function DashboardContent(props: DashboardContentProps) {
             <div className={`${style["flex-wrap"]} ${style["y-space-padding-72"]} ${style["flex"]} ${style["justify-center"]} ${style["gap-50"]}`}>
                 <LessonCard lessonId="1"/> 
                 <LessonCard lessonId="2"/>
+                <LessonCard lessonId="5"/>
                 <LessonCard lessonId="3"/> 
+                <LessonCard lessonId="4"/> 
+                <LessonCard lessonId="6"/> 
             </div>
         </section>
     )
