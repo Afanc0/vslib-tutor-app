@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 interface LessonCardProps {
     lessonId: keyof typeof dataLesson;
-  }
+}
 
 function LessonCard(props: LessonCardProps) {
 
