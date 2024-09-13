@@ -18,6 +18,12 @@
     }
 }
 
+@mixin margin-bottom($x) {
+    .margin-bottom-#{$x} {
+        margin-bottom: #{$x}px;
+    }
+}
+
 @mixin padding-right($x) {
     .padding-right-#{$x} {
         margin-right: #{$x}px;
