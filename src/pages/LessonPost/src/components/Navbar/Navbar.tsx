@@ -8,10 +8,12 @@ function Navbar() {
         <header id={styles["header-section"]} >
             <div className={`${styles["x-space-padding-96"]} ${styles["y-space-padding-32"]}`}>
                 <div className={`${styles["flex"]} ${styles["align-center"]} ${styles["w-75"]} ${styles["justify-space-between"]}`}>
-                    <div className={`${styles["flex"]} ${styles["align-center"]} ${styles["gap-8"]}`}>
-                        <TitleIcon />
-                        <span className={`${styles["text-size-16"]} ${styles["semibold-text"]}`}>LEFT4SCRIPT</span>
-                    </div>
+                    <a href={"/"}>
+                        <div className={`${styles["flex"]} ${styles["align-center"]} ${styles["gap-8"]}`}>
+                                <TitleIcon />
+                            <span className={`${styles["text-size-16"]} ${styles["semibold-text"]}`}>LEFT4SCRIPT</span>
+                        </div>
+                    </a>
                     <div className={`${styles["flex"]}`}>
                         <div className={`${styles["w-50"]}`}>
                             <ul className={`${styles["flex"]} ${styles["justify-space-between"]} ${styles["flex-row"]}`}>
