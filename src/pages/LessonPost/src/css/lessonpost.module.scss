@@ -1,0 +1,85 @@
+@import "../../../../css/global.scss";
+
+$content-background-color: #ffffff;
+$common-text-color: #000000;
+$easy-lesson-card: #FABC3F;
+$figure-text: rgb(84, 86, 88);
+
+/* Padding */
+@include x-space-padding(144);
+@include x-space-padding(64);
+@include y-space-padding(32);
+
+/* Margin */
+@include margin-bottom(16);
+
+
+/* Text */
+@include text-size(14);
+@include text-size(24);
+@include text-size(18);
+@include text-size(12);
+
+/* Gap */
+@include gap(8);
+@include gap(12);
+@include gap(20);
+@include gap(24);
+
+#content-section-color {
+    background-color: $content-background-color;
+}
+
+/* flex properties */
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.justify-align-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+/* Typology */
+.text-black {
+    color: $common-text-color;
+}
+
+.semibold {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+/* Color Text */
+.easy-text {
+    color: $easy-lesson-card
+}
+
+.image-full-cover {
+    width: 100%;
+    object-fit: cover;
+}
+
+.w-50 {
+    width: 50%
+}
+
+#figure-text {
+    color: $figure-text;
+}
