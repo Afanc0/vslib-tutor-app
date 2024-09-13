@@ -1,10 +1,7 @@
 import styles from "../../../css/lessonpost.module.scss"
 
-import code from "../../../../../../assets/Screenshot from 2024-09-12 02-39-29.png"
-import pic1 from "../../../../../../assets//Screenshot from 2024-09-12 20-45-13.png"
-import pic2 from "../../../../../../assets/Screenshot from 2024-09-12 20-45-37.png"
-
 import lessonData from "../../../../../../lesson-post-content.json"
+import lessonprel from "../../../../../../data-lesson.json"
 
 function ContentLayout() {
 
@@ -40,13 +37,13 @@ function ContentLayout() {
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10 6l6 6-6 6" />
                     </svg>
-                    <span className={`${styles["text-black"]} ${styles["text-size-14"]} ${styles["semibold"]}`}>Hello, World!</span>
+                    <span className={`${styles["text-black"]} ${styles["text-size-14"]} ${styles["semibold"]}`}>{lessonprel[lessonId]["title"]}</span>
                 </div>
                 <div className={`${styles["flex"]} ${styles["flex-col"]} ${styles["gap-20"]} ${styles["justify-align-center"]}`}>
                     <div className={styles["w-50"]}>
 
                         <div className={`${styles["flex"]} ${styles["flex-col"]} ${styles["gap-12"]} ${styles["margin-bottom-16"]}`}>
-                            <span className={`${styles["text-black"]} ${styles["bold"]} ${styles["text-size-24"]}`}>In this introductory lesson, we'll explore how to use action functions to display a classic message: Hello, World!. This foundational step will help you understand how action functions work and how they can be used to interact with code dynamically.</span>
+                            <span className={`${styles["text-black"]} ${styles["bold"]} ${styles["text-size-24"]}`}>{lessonprel[lessonId]["description"]}</span>
                             <span className={`${styles["text-black"]}`}>{lessonData[lessonId]["section-caution"]}</span>
                         </div>
                         {renderTextSection()}
