@@ -2,37 +2,43 @@
     "1": {
         "title": "Hello, World!",
         "description": "In this introductory lesson, we'll explore how to use action functions to display a classic message: Hello, World!. This foundational step will help you understand how action functions work and how they can be used to interact with code dynamically.",
-        "difficulty": "Beginner", 
+        "difficulty": "Beginner",
+        "urlparam": "helloworld",
         "url": "https://ucarecdn.com/66fc354e-3c1d-471b-a8c6-d0ca18d8dd54/"
     }, 
     "2": {
         "title": "Configuration",
         "description": "In this introductory lesson, we’ll learn how to configure the vslib files within the Left 4 Dead 2 directory to enable scripting. Mastering this setup is crucial, as it forms the foundation for all future lessons.",
         "difficulty": "Beginner", 
+        "urlparam": "configuration",
         "url": "https://steamuserimages-a.akamaihd.net/ugc/99476231551631153/E703E7814B9883FEEF433C7C3FB049DC7DB9ACBD/"
     },
     "3": {
         "title": "Squirrel Syntax",
         "description": "In this introductory lesson on Squirrel Syntax, we’ll cover the basics of the Squirrel programming language. You'll learn fundamental concepts and syntax that will serve as the foundation for scripting within the Left 4 Dead 2 environment. This knowledge is essential for effectively using Squirrel and will be the basis for all future lessons.",
         "difficulty": "Intermediate", 
+        "urlparam": "squirrelsyntax",
         "url": "https://imgcdn.stablediffusionweb.com/2024/2/28/c1c4561c-5235-430a-bb71-d1f19e7425fb.jpg"
     },
     "4": {
         "title": "Script Resources",
         "description": "This section provides a comprehensive overview of essential resources for VScript development. It includes detailed documentation on VScript function classes, which are crucial for efficient scripting and development. The resources also feature links to the Model Documentation Library (MDL), offering valuable information on model integration and usage. Additionally, you will find other relevant materials and links to further enhance your understanding and capabilities with VScript. Whether you’re looking for detailed function references or practical examples, this section serves as a valuable guide for navigating and utilizing VScript resources effectively.",
         "difficulty": "Intermediate", 
+        "urlparam": "scriptresources",
         "url": "https://imageio.forbes.com/blogs-images/forbestechcouncil/files/2019/01/canva-photo-editor-8-7.png?height=640&width=640&fit=bounds"
     },
     "5": {
         "title": "VSLib Basics",
         "description": "This section covers the foundational aspects of VSLib scripting, providing a solid starting point for both newcomers and experienced developers. It includes a comprehensive introduction to the basic functions and classes available in VSLib, offering clear explanations and practical examples to help you get up and running with VSLib scripting. Whether you're looking to understand the core functionality or seeking to build more complex scripts, this guide will equip you with the essential knowledge and tools to begin your VSLib scripting journey effectively.",
         "difficulty": "Beginner", 
+        "urlparam": "vslibbasics",
         "url": "https://steamuserimages-a.akamaihd.net/ugc/1751308367673953467/D74B8A81319BACFA21ACEF0F680D93089E453792/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
     },
     "6": {
         "title": "Paginated HUD Menu",
         "description": "This section delves into implementing pagination within HUD menus. It provides a clear guide on setting up paginated navigation, allowing users to view a limited number of menu items per page and seamlessly navigate through multiple pages. The guide includes practical examples and tips for managing pagination effectively, ensuring a smooth and user-friendly menu experience.",
         "difficulty": "Advance", 
+        "urlparam": "paginatedhudmenu",
         "url": "https://www.gamemaps.com/img/guides/images/15_vslib_developer_guide_0.jpg?1446505464"
     }
 }
