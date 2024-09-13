@@ -2,6 +2,8 @@ import style from "../../css/dashboardcontent.module.scss"
 import dataLesson from "../../../../../data-lesson.json"
 import { useEffect, useState } from "react";
 
+import { useNavigate } from "react-router-dom";
+
 interface LessonCardProps {
     lessonId: keyof typeof dataLesson;
 }
@@ -10,6 +12,8 @@ function LessonCard(props: LessonCardProps) {
 
     const { lessonId } = props
     const data = dataLesson[lessonId]
+
+    const navigate = useNavigate();
 
     const [difficultyText, setDifficultyText] = useState("easy-text")
 
@@ -22,6 +26,11 @@ function LessonCard(props: LessonCardProps) {
             setDifficultyText("hard-text");
         }
     }, [data]);
+
+    const routerOnClick = () => {
+        console.log("hello")
+        navigate(`/${lessonId}/${data["urlparam"]}`)
+    }
 
     return (
         <div className={`${style["w-40"]} ${style["shadow-box"]} ${style["flex-1"]} ${style["lesson-card"]}`}>
@@ -37,7 +46,7 @@ function LessonCard(props: LessonCardProps) {
                     <span className={`${style["text-black"]} ${style["text-custom-setup"]} ${style["text-fourline"]}`}>{data["description"]}</span>
                 </div>
                 <div className={`${style["margin-top-8"]}`}>
-                    <button>Begin Lesson</button>
+                    <button onClick={routerOnClick}>Begin Lesson</button>
                 </div>
             </div>
         </div>
