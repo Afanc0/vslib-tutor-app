@@ -1,22 +1,20 @@
-interface GithubLogoProps {
+interface ShadedGithubLogo {
   className?: string;
 }
 
-function GithubLogo({className}: GithubLogoProps) {
+const ShadedGithubLogo = ({className}: ShadedGithubLogo) => {
       const svgStyle: React.CSSProperties = {
         filter: 'drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4))'
       };
     
       return (
-        <div className={className}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="375"
-            height="375"
             viewBox="0 0 30 30"
             style={svgStyle} 
+            className={className}
           >
             <path
               fill="white"
@@ -30,8 +28,7 @@ function GithubLogo({className}: GithubLogoProps) {
               c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
             ></path>
           </svg>
-        </div>
     );
 }
 
-export default GithubLogo;
+export default ShadedGithubLogo;

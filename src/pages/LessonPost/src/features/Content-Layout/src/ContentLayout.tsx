@@ -3,7 +3,14 @@ import styles from "../../../css/lessonpost.module.scss"
 import lessonData from "../../../../../../lesson-post-content.json"
 import lessonprel from "../../../../../../data-lesson.json"
 
-function ContentLayout() {
+import { Breadcrumb } from "../../../components/Breadcrumb"
+
+import { useParams } from 'react-router-dom';
+
+
+const LessonContent = () => {
+
+    const { id: contentId } = useParams<{ id: keyof typeof lessonData }>()
 
     const lessonId = "1" as keyof typeof lessonData
 
@@ -29,19 +36,16 @@ function ContentLayout() {
         return <>{sectionElements}</>;
     }
 
+    if (!contentId) {
+        return <div>Error: No contentId found</div>
+    }
+
     return (
         <section id={styles["content-section-color"]}>
             <div className={`${styles["x-space-padding-144"]} ${styles["y-space-padding-32"]}`}>
-                <div className={`${styles["flex"]} ${styles["align-center"]} ${styles["margin-bottom-16"]}`}>
-                    <span className={`${styles["text-black"]} ${styles["text-size-14"]} ${styles["semibold"]}`}>Home</span>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 6l6 6-6 6" />
-                    </svg>
-                    <span className={`${styles["text-black"]} ${styles["text-size-14"]} ${styles["semibold"]}`}>{lessonprel[lessonId]["title"]}</span>
-                </div>
+                <Breadcrumb location={lessonprel[contentId]["title"]} />
                 <div className={`${styles["flex"]} ${styles["flex-col"]} ${styles["gap-20"]} ${styles["justify-align-center"]}`}>
                     <div className={styles["w-50"]}>
-
                         <div className={`${styles["flex"]} ${styles["flex-col"]} ${styles["gap-12"]} ${styles["margin-bottom-16"]}`}>
                             <span className={`${styles["text-black"]} ${styles["bold"]} ${styles["text-size-24"]}`}>{lessonprel[lessonId]["description"]}</span>
                             <span className={`${styles["text-black"]}`}>{lessonData[lessonId]["section-caution"]}</span>
@@ -54,4 +58,4 @@ function ContentLayout() {
     )
 }
 
-export default ContentLayout;
+export default LessonContent;

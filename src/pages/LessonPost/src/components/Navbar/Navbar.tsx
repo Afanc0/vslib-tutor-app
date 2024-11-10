@@ -14,21 +14,6 @@ function Navbar() {
                             <span className={`${styles["text-size-16"]} ${styles["semibold-text"]}`}>LEFT4SCRIPT</span>
                         </div>
                     </a>
-                    <div className={`${styles["flex"]}`}>
-                        <div className={`${styles["w-50"]}`}>
-                            <ul className={`${styles["flex"]} ${styles["justify-space-between"]} ${styles["flex-row"]}`}>
-                                <li className={`${styles["text-size-16"]} ${styles["semibold-text"]}`}>
-                                    REPOSITORY
-                                </li>
-                                <li className={`${styles["text-size-16"]} ${styles["semibold-text"]}`}>
-                                    SQUIRREL DOCUMENTATION
-                                </li>
-                                <li className={`${styles["text-size-16"]} ${styles["semibold-text"]}`}>
-                                    COMPENDIUM
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </header>

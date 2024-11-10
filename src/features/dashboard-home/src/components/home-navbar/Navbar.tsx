@@ -24,13 +24,13 @@ function HomeNavbar(props: RefProps) {
                 <div className={`${styles["flex"]}`}>
                     <div className={`${styles["w-50"]}`}>
                         <ul className={`${styles["flex"]} ${styles["justify-space-between"]} ${styles["flex-row"]}`}>
-                            <li onClick={() => scrollToSection(repo)} className={`${styles["text-size-16"]} ${styles["semibold-text"]}`}>
+                            <li onClick={() => scrollToSection(repo)} className={`${styles["text-size-16"]} ${styles["cursor-pointer"]} ${styles["semibold-text"]}`}>
                                 REPOSITORY
                             </li>
-                            <li onClick={() => scrollToSection(squir)} className={`${styles["text-size-16"]} ${styles["semibold-text"]}`}>
+                            <li onClick={() => scrollToSection(squir)} className={`${styles["text-size-16"]} ${styles["cursor-pointer"]} ${styles["semibold-text"]}`}>
                                 SQUIRREL DOCUMENTATION
                             </li>
-                            <li onClick={() => scrollToSection(comp)}  className={`${styles["text-size-16"]} ${styles["semibold-text"]}`}>
+                            <li onClick={() => scrollToSection(comp)}  className={`${styles["text-size-16"]} ${styles["cursor-pointer"]} ${styles["semibold-text"]}`}>
                                 COMPENDIUM
                             </li>
                         </ul>

@@ -1,4 +1,4 @@
-import LessonCard from "./components/LessonCard"
+import LessonCard from "../../../pages/Dashboard/src/components/LessonCard"
 import style from "./css/dashboardcontent.module.scss"
 import lessonData from "../../../data-lesson.json"
 

@@ -102,3 +102,7 @@ button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
+
+.flex-wrap {
+    flex-wrap: wrap;
+}

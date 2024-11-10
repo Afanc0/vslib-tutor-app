@@ -1,20 +1,17 @@
-import style from "../../css/dashboardcontent.module.scss"
+import style from "../../css/dashboard.module.scss"
 import dataLesson from "../../../../../data-lesson.json"
 import { useEffect, useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
-interface LessonCardProps {
+interface LessonCard {
     lessonId: keyof typeof dataLesson;
 }
 
-function LessonCard(props: LessonCardProps) {
+const LessonCard: React.FC<LessonCard> = ({lessonId}) => {
 
-    const { lessonId } = props
     const data = dataLesson[lessonId]
-
     const navigate = useNavigate();
-
     const [difficultyText, setDifficultyText] = useState("easy-text")
 
     useEffect(() => {

@@ -1,0 +1,435 @@
+@import '../../../../css/global.scss';
+
+/* paddings */
+@include x-space-padding(64);
+@include x-space-padding(48);
+@include x-space-padding(36);
+@include x-space-padding(96);
+@include y-space-padding(124);
+
+/* Local x-axis padding */
+@include x-space-padding(8);
+@include x-space-padding(16);
+@include x-space-padding(24);
+@include x-space-padding(32);
+
+/* Local y-axis padding */
+@include y-space-padding(100);
+@include y-space-padding(16);
+@include y-space-padding(48);
+@include y-space-padding(32); 
+@include y-space-padding(96); 
+
+/* text size */
+@include text-size(14);
+@include text-size(16);
+@include text-size(40);
+
+/* Local text-size */
+@include text-size(16);
+@include text-size(18);
+@include text-size(20);
+@include text-size(24);
+@include text-size(28);
+@include text-size(32);
+@include text-size(48);
+
+/* margin */
+@include margin-top(16);
+
+@include margin-y(16);
+
+/* gap */
+@include gap(8);
+@include gap(24);
+@include gap(12);
+@include gap(16);
+@include gap(20);
+@include gap(32);
+@include gap(48);
+
+// Define the variable
+$content-body-background-color: #694F8E;
+$content-body-background-color-2: #B692C2;
+$text-title-color: #FFDFD6;
+$header-background-color: #3B2D5F;
+
+/* Main Section Design */
+.content-color-apply {
+    background-color: $content-body-background-color;
+}
+
+.content-color-apply-2 {
+    background-color: $content-body-background-color-2;
+}
+
+#header-section {
+    background-color: $header-background-color;
+}
+
+.min-w-100 {
+    min-width: 100%;
+}
+
+.w-16 {
+    width: 800px;
+}
+
+.max-w-16 {
+    max-width: 550px;
+}
+
+.min-h-250 {
+    min-height: 600px;
+}
+
+.w-inherit {
+    min-width: inherit;
+    height: 100vh;
+}
+
+.w-50 {
+    width: 500px;
+}
+
+.w-75 {
+    width: 750px;
+}
+
+/* Module Classes */
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.justify-align-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-align-end {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.justify-align-start {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+#text-color {
+    color: $text-title-color
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.line-height-1 {
+    line-height: 1.15cm;
+}
+
+.w-16 {
+    width: 500px;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+button:hover {
+    border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.semibold-text {
+    font-weight: 500;
+}
+
+/* background */
+#background-content {
+    background-image: url('../../../../assets/3280350.svg');
+    background-size: cover;
+}
+
+.z-50 {
+    z-index: 50;
+}
+
+.round-button {
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    background-color: #B692C2;
+    border: 1px solid transparent;
+    cursor: pointer;
+    
+    &:hover {
+        border-color: #646cff;
+    }
+    &:focus,
+    &:focus-visible {
+      outline: 4px auto -webkit-focus-ring-color;
+    }
+}
+
+.display-absolute {
+    position: absolute;
+}
+
+.display-sticky {
+    position: sticky;
+    top: 0;
+}
+
+.min-w-full {
+    min-width: 100%;
+}
+
+.text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.svg-component-size {
+    height: 375px;
+    width: 375px;
+}
+
+@media (max-width: 950px) {
+    .shrink-screen {
+        display: none;
+    }
+}
+
+
+@media (min-width: 950px) {
+    .shallow-nav {
+        display: none;
+    }
+}
+
+
+/* Footer */
+
+/* Varibles */
+$footer-background-color: #3B2D5F;
+
+/* paddings */
+@include x-space-padding(48);
+@include x-space-padding(64);
+@include x-space-padding(96);
+
+@include y-space-padding(48);
+@include y-space-padding(72);
+
+@include padding-right(64);
+
+/* text size */
+@include text-size(18);
+
+/* gap */
+@include gap(6);
+@include gap(20);
+
+
+#footer-section {
+    background-color: $footer-background-color;
+}
+
+
+.footer-span {
+    cursor: pointer;
+    &:hover {
+        color: #4457ffa2;
+    }
+}
+
+/* Module Classes */
+
+.flex-2 {
+    flex: 2;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.letter-spacing-375 {
+    letter-spacing: 0.0375cm;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+/* size */
+
+.max-w-75 {
+    max-width: 575px;
+}
+
+.bottom-border-1 {
+    border-bottom: solid 1px white;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.round-full {
+    border-radius: 100%;
+}
+
+.round-object {
+    width: 60px;
+    height: 60px;
+}
+
+.round-color {
+    background-color: #694F8E;
+}
+
+
+/* Lesson */
+
+
+/* Local x-axis padding */
+@include x-space-padding(96);
+@include x-space-padding(36);
+
+/* Local text-size */
+@include text-size(20);
+
+/* Local y-axis padding */
+@include y-space-padding(72);
+@include y-space-padding(20);
+@include y-space-padding(6);
+
+/* Local margin */
+@include margin-top(8);
+@include margin-top(16);
+
+/* Local gap */
+@include gap(50);
+
+$background-white-color: #ffffff;
+$module-text-color: #000000;
+$easy-lesson-card: #FABC3F;
+$med-lesson-card: #E85C0D;
+$hard-lesson-card: #821131;
+
+#dasboard-content-white {
+    background-color: $background-white-color;
+}
+
+.text-black {
+    color: $module-text-color;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.lesson-card {
+    flex: 1 1 calc(25% - 20px);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.w-40 {
+    max-width: 425px;
+}
+
+.image-full-cover {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.shadow-box {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-custom-setup {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+.text-ellipsis {
+    text-overflow: ellipsis;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.text-fourline {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    line-height: 1.5;
+    max-height: 6em;
+    white-space: normal;
+}
+
+.easy-text {
+    color: $easy-lesson-card
+}
+
+.med-text {
+    color: $med-lesson-card
+}
+
+.hard-text {
+    color: $hard-lesson-card
+}
