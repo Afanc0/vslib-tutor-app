@@ -26,7 +26,7 @@ const LessonCard: React.FC<LessonCard> = ({lessonId}) => {
 
     const routerOnClick = () => {
         console.log("hello")
-        navigate(`/${lessonId}/${data["urlparam"]}`)
+        navigate(`/${lessonId}`)
     }
 
     return (

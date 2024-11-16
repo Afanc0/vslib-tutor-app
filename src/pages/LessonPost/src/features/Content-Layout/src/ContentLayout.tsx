@@ -3,7 +3,7 @@ import styles from "../../../css/lessonpost.module.scss"
 import lessonData from "../../../../../../lesson-post-content.json"
 import lessonprel from "../../../../../../data-lesson.json"
 
-import { Breadcrumb } from "../../../components/Breadcrumb"
+import { Breadcrumb } from "../../../../content-v2/src/components/Breadcrumb"
 
 import { useParams } from 'react-router-dom';
 

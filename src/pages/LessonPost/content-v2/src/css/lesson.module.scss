@@ -1,0 +1,43 @@
+@import "../../../../../css/global.scss";
+
+
+@include x-space-padding(32);
+@include y-space-padding(16);
+
+.bg-white {
+    background-color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-align-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.min-h-70 {
+    min-height: 25rem;
+}
+
+@media (max-width: 950px) {
+    .resize-display-none {
+        display: none;
+    }
+}
+
+@media (min-width: 950px) {
+    .resize-display {
+        display: none
+    }
+}
+
+
+
+
+

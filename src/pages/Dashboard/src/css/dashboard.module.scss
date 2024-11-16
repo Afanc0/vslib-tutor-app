@@ -244,12 +244,18 @@ button:focus-visible {
     .shrink-screen {
         display: none;
     }
+    .resize-display-none {
+        display: none;
+    }
 }
 
-
+ 
 @media (min-width: 950px) {
     .shallow-nav {
         display: none;
+    }
+    .resize-display {
+        display: none
     }
 }
 
@@ -370,7 +376,6 @@ $hard-lesson-card: #821131;
 .text-black {
     color: $module-text-color;
 }
-
 .flex-col {
     flex-direction: column;
 }
@@ -385,7 +390,7 @@ $hard-lesson-card: #821131;
 
 .w-40 {
     max-width: 425px;
-    min-width: 325px;
+    min-width: 370px;
 }
 
 .image-full-cover {

@@ -25,7 +25,9 @@ const HeroBanner: FC<HeroBanner> = ({
 
     return (
         <React.Fragment>
-            <ShallowHeader />
+            <div className={styles["shallow-nav"]}>
+                <ShallowHeader position="center"/>
+            </div>
             <header id={styles["background-content"]} className={styles["shrink-screen"]}>
                 <HomeNavbar refArray={refNavigation} />
                 <div className={`${styles["x-space-padding-96"]}  ${styles["y-space-padding-100"]} ${styles["flex"]} ${styles["align-center"]} ${styles["justify-space-between"]}`}>
