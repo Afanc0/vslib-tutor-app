@@ -14,6 +14,10 @@ import style from "./css/lesson.module.scss"
 const LessonContent = () => {
 
     const { id } = useParams<{ id: keyof typeof lesson }>()
+
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     
     return (
         <React.Fragment>

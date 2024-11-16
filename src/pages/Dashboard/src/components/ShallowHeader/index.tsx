@@ -19,7 +19,7 @@ const ShallowHeader: React.FC<ShallowHeader> = ({
         <header>
             <div id={styles["header-section"]} className={`${styles["display-sticky"]} ${styles["z-50"]} ${styles["x-space-padding-96"]} ${styles["y-space-padding-32"]} ${styles["min-w-full"]}`}>
                 <div className={`${styles["flex"]} ${styles[positionOptions[position]]}`}>
-                    <a href="/">
+                    <a href="/vslib-tutor-app/">
                         <div className={`${styles["flex"]} ${styles["justify-align-center"]} ${styles["gap-8"]}`}>
                             <TitleIcon />
                             <span className={`${styles["text-size-16"]} ${styles["semibold-text"]}`}>LEFT4SCRIPT</span>
