@@ -59,15 +59,15 @@ const TextSection: React.FC<TextSection> = ({
             <React.Fragment>
                 <div className={style["x-space-padding-16"]}>
                     <div className={`${style["flex"]} ${style["flex-col"]} ${style["justify-align-center"]} ${style["gap-10"]}`}>
-                        <div className={style["max-w-70"]}>
-                            <p className={`${style["text-black"]} ${style["text-size-16"]}`}>{section["text"]}</p>
-                        </div>
                         <div className={`${style["flex"]} ${style["flex-col"]} ${style["justify-align-center"]} ${style["max-w-50"]}`}>
                             <img 
                                 className={`${style["w-full"]}`} 
                                 src={section["url"]}
                             />
                             <p className={`${style["text-gray"]} ${style["text-size-14"]}`}>{section["image-text"]}</p>
+                        </div>
+                        <div className={style["max-w-70"]}>
+                            <p className={`${style["text-black"]} ${style["text-size-16"]}`}>{section["text"]}</p>
                         </div>
                     </div>
                 </div>
