@@ -1,8 +1,14 @@
 @import "../../../../../css/global.scss";
 
 
+@include x-space-padding(16);
 @include x-space-padding(32);
+
 @include y-space-padding(16);
+@include y-space-padding(32);
+
+@include text-size(16);
+@include text-size(14);
 
 .bg-white {
     background-color: white;
@@ -12,8 +18,16 @@
     color: black;
 }
 
+.text-gray {
+    color: rgb(54, 54, 54);
+}
+
 .flex {
     display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
 }
 
 .justify-align-center {
@@ -23,6 +37,26 @@
 
 .min-h-70 {
     min-height: 25rem;
+}
+
+.max-w-70 {
+    max-width: 70rem;
+}
+
+.max-w-50 {
+    max-width: 50rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-14 {
+    gap: 14px;
 }
 
 @media (max-width: 950px) {

@@ -38,31 +38,31 @@ const Dashboard = () => {
                 onClick={scrollToSection}
             />
             <main>
-            <div className={styles["resize-display-none"]}>
-                <FeatureBlock 
-                    contentType='REPOSITORY'
-                    contentTitle={data["LINK_CONTENT_1"]["title"]}
-                    contentDescription={data["LINK_CONTENT_1"]["description"]}
-                    buttonTitle='View Repo'
-                    featureBlockRef={repo}
-                    contentSvg={ShadedGithubLogo}
-                    contentLink={data["LINK_CONTENT_1"]["link"]}
-                    panelColor="content-color-apply"
-                    variant={true}
-                />
-            </div>
-            <div className={styles["resize-display"]}>
-                <FeatureBlock 
-                    contentType='REPOSITORY'
-                    contentTitle={data["LINK_CONTENT_1"]["title"]}
-                    contentDescription={data["LINK_CONTENT_1"]["description"]}
-                    buttonTitle='View Repo'
-                    featureBlockRef={repo}
-                    contentSvg={ShadedGithubLogo}
-                    contentLink={data["LINK_CONTENT_1"]["link"]}
-                    panelColor="content-color-apply"
-                    variant={false}
-                />
+            <div ref={repo}>
+                <div className={styles["resize-display-none"]}>
+                    <FeatureBlock 
+                        contentType='REPOSITORY'
+                        contentTitle={data["LINK_CONTENT_1"]["title"]}
+                        contentDescription={data["LINK_CONTENT_1"]["description"]}
+                        buttonTitle='View Repo'
+                        contentSvg={ShadedGithubLogo}
+                        contentLink={data["LINK_CONTENT_1"]["link"]}
+                        panelColor="content-color-apply"
+                        variant={true}
+                    />
+                </div>
+                <div className={styles["resize-display"]}>
+                    <FeatureBlock 
+                        contentType='REPOSITORY'
+                        contentTitle={data["LINK_CONTENT_1"]["title"]}
+                        contentDescription={data["LINK_CONTENT_1"]["description"]}
+                        buttonTitle='View Repo'
+                        contentSvg={ShadedGithubLogo}
+                        contentLink={data["LINK_CONTENT_1"]["link"]}
+                        panelColor="content-color-apply"
+                        variant={false}
+                    />
+                </div>
             </div>
             <FeatureBlock 
                 contentType='SQUIRREL DOCUMENTATION'

@@ -4,17 +4,17 @@
         "sections": {
             "0": {
                 "text": "This script, written in Squirrel, uses the IncludeScript('VSLib') function to import a library called VSLib. It defines a function Notifications::OnSpawn::HelloWorld that triggers when a player spawns in the game. The function checks if the player object is not null, ensuring that the player exists. If so, it calls Utils.SayToAll('Hello, World!'), which broadcasts the message 'Hello, World!' to all players in the game. This example demonstrates a basic event-based function that interacts with players and sends a message globally when a specific event (like player spawning) occurs.",
-                "url": "../assets/Screenshot from 2024-09-12 02-39-29.png",
+                "url": "./assets/Screenshot from 2024-09-12 02-39-29.png",
                 "image-text": "Function created to auto-execute upon meeting the action requirement"
             },
             "1": {
                 "text": "When the player spawns into the game, the function Notifications::OnSpawn::HelloWorld is executed. Since the condition if (player != null) checks that the player object is valid, the line Utils.SayToAll('Hello, World!') runs successfully. As a result, the console logs for all connected players will display the message 'Hello, World!', confirming that the message has been broadcasted globally. This is a simple demonstration of how events can trigger messages to be shared with everyone in the game via console logs, providing feedback to users that the function executed as expected.",
-                "url": "../assets//Screenshot from 2024-09-12 20-45-13.png",
+                "url": "./assets/Screenshot from 2024-09-12 20-45-13.png",
                 "image-text": "Resulting in-game chat logs upon spawning in"
             },
             "2": {
                 "text": "In addition to appearing in the in-game chat, the message `Hello, World!` will also be logged in the terminal. Showing up four times—once for each player. This occurs because the Utils.SayToAll function sends the message to every player in the session, and the terminal logs each instance of the message being sent, providing a clear record of the event execution.",
-                "url": "../assets/Screenshot from 2024-09-12 20-45-37.png",
+                "url": "./assets/Screenshot from 2024-09-12 20-45-37.png",
                 "image-text": "These logs are also found inside the terminal as text"
             }
         }

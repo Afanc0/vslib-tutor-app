@@ -7,13 +7,13 @@ import { LessonPost } from "./components/LessonPost"
 import { useParams } from 'react-router-dom';
 
 import data from "../../../../content-text.json"
-import lesson from "../../../../data-lesson.json"
+import content from "../../../../lesson-post-content.json"
 
 import style from "./css/lesson.module.scss"
 
 const LessonContent = () => {
 
-    const { id } = useParams<{ id: keyof typeof lesson }>()
+    const { id } = useParams<{ id: keyof typeof content }>()
 
     React.useEffect(() => {
         window.scrollTo(0, 0);

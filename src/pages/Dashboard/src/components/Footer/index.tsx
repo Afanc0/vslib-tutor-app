@@ -46,16 +46,24 @@ const Footer: FC<DashboardFooter> = ({
                         <span className={`${style["text-size-18"]} ${style["bold"]} ${style["letter-spacing-375"]}`}>QUICK LINKS</span>
                         <ul className={`${style["flex"]} ${style["flex-col"]} ${style["gap-6"]}`}>
                             <li>
-                                <span onClick={() => onOptionClick(comp)} className={style["footer-span"]}>Configuration</span>
+                                <a href="/vslib-tutor-app/1">
+                                    <span className={style["footer-span"]}>Configuration</span>
+                                </a>
                             </li>
                             <li>
-                                <span onClick={() => onOptionClick(comp)} className={style["footer-span"]}>VSLib Basics</span>
+                                <a href="/vslib-tutor-app/5">
+                                    <span className={style["footer-span"]}>VSLib Basics</span>
+                                </a>
                             </li>
                             <li>
-                                <span onClick={() => onOptionClick(comp)} className={style["footer-span"]}>Squirrel Syntax</span>
+                                <a href="/vslib-tutor-app/3">
+                                    <span className={style["footer-span"]}>Squirrel Syntax</span>
+                                </a>
                             </li>
                             <li>
-                                <span onClick={() => onOptionClick(comp)} className={style["footer-span"]}>Script Resources</span>
+                                <a href="/vslib-tutor-app/4">
+                                    <span className={style["footer-span"]}>Script Resources</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
