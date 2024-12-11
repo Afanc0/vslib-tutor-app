@@ -2,7 +2,7 @@ import { FC, MutableRefObject } from "react"
 import style from "../../css/dashboard.module.scss"
 import GithubMinIcon from "../../../../../features/dashboard-footer/src/components/GithubMinIcon";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import shortcut from "../../../../../shortcut-links.json"
 
@@ -21,6 +21,13 @@ const Footer: FC<DashboardFooter> = ({
 }) => {
 
     const [repo, squir, comp] = refNavigation ?? []
+
+    const navigate = useNavigate();
+
+    const routerOnClick = (id: string) => {
+        console.log("hello")
+        navigate(id)
+    }
 
     const shortcutLinks = shortcut["shortcut-links"]
 
@@ -52,9 +59,9 @@ const Footer: FC<DashboardFooter> = ({
                         <ul className={`${style["flex"]} ${style["flex-col"]} ${style["gap-6"]}`}>
                             {shortcutLinks.map((value, key) => (
                                 <li key={key}>
-                                    <Link to={value["link"]}>
+                                    <div onClick={() => routerOnClick(value["link"])}>
                                         <span className={style["footer-span"]}>{value["name"]}</span>
-                                    </Link>
+                                    </div>
                                 </li>
                             ))}
                         </ul>
