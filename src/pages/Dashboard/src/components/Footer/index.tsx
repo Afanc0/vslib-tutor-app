@@ -2,6 +2,9 @@ import { FC, MutableRefObject } from "react"
 import style from "../../css/dashboard.module.scss"
 import GithubMinIcon from "../../../../../features/dashboard-footer/src/components/GithubMinIcon";
 import React from "react";
+import { Link } from "react-router-dom";
+
+import shortcut from "../../../../../shortcut-links.json"
 
 interface DashboardFooter {
     refNavigation?: MutableRefObject<HTMLElement | null>[];
@@ -18,6 +21,8 @@ const Footer: FC<DashboardFooter> = ({
 }) => {
 
     const [repo, squir, comp] = refNavigation ?? []
+
+    const shortcutLinks = shortcut["shortcut-links"]
 
     return (
         <footer id={style["footer-section"]}>
@@ -45,26 +50,13 @@ const Footer: FC<DashboardFooter> = ({
                     <div className={`${style["flex"]} ${style["flex-1"]} ${style["flex-col"]} ${style["gap-20"]}`}>
                         <span className={`${style["text-size-18"]} ${style["bold"]} ${style["letter-spacing-375"]}`}>QUICK LINKS</span>
                         <ul className={`${style["flex"]} ${style["flex-col"]} ${style["gap-6"]}`}>
-                            <li>
-                                <a href="/vslib-tutor-app/1">
-                                    <span className={style["footer-span"]}>Configuration</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vslib-tutor-app/5">
-                                    <span className={style["footer-span"]}>VSLib Basics</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vslib-tutor-app/3">
-                                    <span className={style["footer-span"]}>Squirrel Syntax</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vslib-tutor-app/4">
-                                    <span className={style["footer-span"]}>Script Resources</span>
-                                </a>
-                            </li>
+                            {shortcutLinks.map((value, key) => (
+                                <li key={key}>
+                                    <Link to={value["link"]}>
+                                        <span className={style["footer-span"]}>{value["name"]}</span>
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </React.Fragment>
