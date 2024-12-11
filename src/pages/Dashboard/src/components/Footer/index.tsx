@@ -2,7 +2,7 @@ import { FC, MutableRefObject } from "react"
 import style from "../../css/dashboard.module.scss"
 import GithubMinIcon from "../../../../../features/dashboard-footer/src/components/GithubMinIcon";
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import shortcut from "../../../../../shortcut-links.json"
 
