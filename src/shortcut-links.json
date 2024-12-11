@@ -1,0 +1,20 @@
+{
+    "shortcut-links": [
+        {
+            "name": "Configuration",
+            "link": "/1"
+        },
+        {
+            "name": "VSLib Basics",
+            "link": "/5"
+        },
+        {
+            "name": "Squirrel Syntax",
+            "link": "/3"
+        },
+        {
+            "name": "Script Resources",
+            "link": "/4"
+        }
+    ]
+}
